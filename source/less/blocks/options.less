@@ -1,0 +1,56 @@
+.options {
+  margin-bottom: 9px;
+}
+
+.options__list {
+  flex-basis: 660px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 16px;
+}
+
+.options__label {
+  padding-left: 34px;
+  position: relative;
+}
+
+.options__input {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.options__checkbox {
+  position: absolute;
+  left: 0;
+  width: 24px;
+  height: 24px;
+  background-image: url(../../img/checkbox-unchecked.svg);
+}
+
+.options__input:checked + .options__checkbox {
+  background-image: url(../../img/checkbox-checked.svg);
+}
+
+.options__input:focus + .options__checkbox,
+.options__input:hover + .options__checkbox{
+  background-image: url(../../img/checkbox-focus-unchecked.svg);
+}
+
+.options__input:checked:focus + .options__checkbox,
+.options__input:checked:hover + .options__checkbox{
+  background-image: url(../../img/checkbox-focus-checked.svg);
+}
+
+.options__input:active + .options__checkbox{
+  background-image: url(../../img/checkbox-active-unchecked.svg);
+}
+
+.options__input:checked:active + .options__checkbox{
+  background-image: url(../../img/checkbox-active-checked.svg);
+}
+
+.options__item {
+  margin-bottom: 26px;
+}
