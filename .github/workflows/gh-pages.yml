@@ -22,4 +22,3 @@ jobs:
           TOKEN: ACCESS_TOKEN
           BRANCH: gh-pages
           FOLDER: ./build
-          SINGLE_COMMIT: false
