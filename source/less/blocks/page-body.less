@@ -11,17 +11,22 @@
   @media (max-width: @mobile-width-only) {
     max-width: 336px;
   }
+}
 
-  .page-body__content-wrapper {
-    flex-basis: 1000px;
-    display: flex;
-    margin: 0 auto;
-    justify-content: space-between;
+.page-body__content-wrapper {
+  flex-basis: 1000px;
+  display: flex;
+  margin: 0 auto;
+  justify-content: space-between;
 
-    @media (max-width: @mobile-width-only) {
-      flex-wrap: wrap;
-      flex-basis: 336px;
-    }
+  @media (max-width: @mobile-width-only) {
+    flex-wrap: wrap;
+    flex-basis: 336px;
+  }
+
+  @media (min-width: @tablet-width) {
+    padding-left: 40px;
+    padding-right: 40px;
   }
 }
 
