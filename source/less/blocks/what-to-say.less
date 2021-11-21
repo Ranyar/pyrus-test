@@ -64,5 +64,15 @@
   &:active::before {
     opacity: 60%;
   }
+
+  @media(max-width: @mobile-width-only) {
+    min-width: 336px;
+    padding-right: 17px;
+    margin: 0 auto 28px;
+
+    &::before {
+      left: 111px;
+    }
+  }
 }
 

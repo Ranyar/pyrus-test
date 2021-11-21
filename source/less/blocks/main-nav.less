@@ -2,6 +2,10 @@
   display: flex;
   flex-basis: 403px;
   justify-content: space-between;
+
+  @media (max-width: @mobile-width-only) {
+    flex-wrap: wrap;
+  }
 }
 
 .main-nav__list {
@@ -9,9 +13,25 @@
   margin: 0;
   padding: 0;
   display: flex;
+
+  @media(max-width: @mobile-width-only) {
+    margin-bottom: 13px;
+  }
 }
+
 .main-nav__item {
   margin-right: 19px;
+
+  @media (max-width: @mobile-width-only) {
+    &:first-child {
+      margin-right: 20px;
+      padding-left: 2px;
+    }
+
+    &:nth-child(2) {
+      margin-right: 0;
+    }
+  }
 }
 
 .main-nav__link {
